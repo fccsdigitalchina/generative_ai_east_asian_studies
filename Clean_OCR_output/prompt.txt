@@ -1,0 +1,28 @@
+I have a list of missionary names in French. They lived in 16c to 18c. please clean the data for me:
+
+P. Barthél. Tedeschi 		
+P. Jérôme Rodriguez	
+P. Félic. da Silva	
+P. Alphon. Vagnoni	
+Fr. Ben. de Goes 	
+Fr. Emman. Pereira	
+Fr. Antoine Leitao 	
+P. S. de Ursis 	...
+P. Emm. Diaz (junior) ..... P, Nicol. Trigault.	
+Fr. Pascal Mendes . 		
+Fr. Jean Fernandes 	
+Fr. Fr. de Lagea	
+Fr. Dom. Mendes	
+Fr. Jacq. Néva		
+P. Ruiz Barreto et ses Fr. Louis Rozitto .. [comp. Fr. Vinc. Caun om Calioye. P. Jules Aleni	
+P. Franç. Sambiasi		 ...
+P. Alv. de Semedo	
+P. Pier. Van Spiere (Spira) P. Jean. Ureman 		
+Fr. Loti, de Faria		
+Fr. Ignace........ Fr. Math. Gham		
+P. Franç. Furtado		
+P. Jean Terrenz	
+P. R. de Figueredo	
+P. W.-P. Kirwitzer 	
+P. J.-Ad. Schallvon Bell. Fr.E. de Figueredo	
+Fr.J.-Mel. Ribero	

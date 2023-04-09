@@ -1,0 +1,43 @@
+I have a list of missionary names in French. They lived in 16c to 18c. please clean the data for me, and give him their birth year, death year, their chinese names, nationalities and writings(mutiple writings should be seperated by ;) in 
+
+Most the information can be found in this book: Pfister, L. . A. du texte. (1932). Notices biographiques et bibliographiques sur les Jésuites de l'ancienne Mission de Chine : 1552-1773. Tome II, XVIIIe siècle / par le P. Louis Pfister,... Chang-Hai.
+
+Generate 10 records per batch in this format:
+|cleaned_name|cleaned_name_chn|birth_year|death_year|nationality|writings|
+| -- | -- | -- | -- | -- | -- |
+
+Pause after generating each batch and wait for my input "continue" to generate the next batch.
+
+P. Barthélémy Tedeschi
+P. Jérôme Rodriguez
+P. Féliciano da Silva
+P. Alphonse Vagnoni
+Fr. Bento de Góes
+Fr. Emmanuel Pereira
+Fr. Antoine Leitao
+P. S. de Ursis
+P. Emmanuel Diaz (junior)
+P. Nicolas Trigault
+Fr. Pascal Mendes
+Fr. Jean Fernandes
+Fr. François de Lagea
+Fr. Domingos Mendes
+Fr. Jacques Néve
+P. Ruiz Barreto
+Fr. Louis Rozitto
+Fr. Vincent Caun om Calioye
+P. Jules Aleni
+P. François Sambiasi
+P. Alvaro de Semedo
+P. Pierre Van Spiere (Spira)
+P. Jean Ureman
+Fr. Lopo de Faria
+Fr. Ignace
+Fr. Mathieu Gham
+P. François Furtado
+P. Jean Terrenz
+P. R. de Figueredo
+P. Wilhelm-Peter Kirwitzer
+P. Johann Adam Schall von Bell
+Fr. Estevão de Figueredo
+Fr. João Melo Ribeiro
