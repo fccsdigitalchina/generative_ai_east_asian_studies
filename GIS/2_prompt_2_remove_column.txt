@@ -1,0 +1,20 @@
+I have a table with 2 columns with header. Can you output a table without a header (don't output codes for programming language) that only include the AddrName column
+
+personid        AddrName
+89      餘姚
+170     山陰
+340     會稽
+400     上虞
+622     山陰
+624     山陰
+646     會稽
+647     會稽
+935     餘姚
+936     蕭山
+937     會稽
+1474    新昌
+1692    山陰
+2043    嵊縣
+1285    山陰
+1286    山陰
+1288    山陰

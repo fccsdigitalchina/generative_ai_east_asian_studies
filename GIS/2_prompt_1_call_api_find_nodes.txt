@@ -1,0 +1,29 @@
+Here is CBDB API:
+https://cbdb.fas.harvard.edu/cbdbapi/person.php?id={personid}&o=json
+
+I have a list of personid
+89
+170
+340
+400
+622
+624
+646
+647
+935
+936
+937
+1474
+1692
+2043
+1285
+1286
+1288
+
+please write python codes to query CBDB APIs by these personids seperately.
+
+Please find the Address node(Package-PersonAuthority-PersonInfo-Person-PersonAddresses-Address) that AddrType: "籍貫(基本地址)", get the corrisponding AddrName.
+the Address node in the CBDB API response might contains a single address element, in which case it is represented as a dictionary, but it might also contains multiple address elements, it is represented as a list of dictionaries.
+Put all the personid and AddrName together, and print it as
+personid    AddrName
+Query interval is 0.5s

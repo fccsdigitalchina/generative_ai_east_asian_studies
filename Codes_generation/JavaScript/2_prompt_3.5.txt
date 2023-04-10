@@ -1,0 +1,18 @@
+I have a paragraphs. The length of this paragraph(p) can be divided by 3:
+a1a2a3...anb1b2b3...bnc1c2c3... cn
+I want to create a new 3 characters list(d) by using the corresponding vertical position of each paragraph. The order of picking characters will be from c1b1a1 to cnbnan.(the position of c1 is (length of p)/3*2, b1 is (length of p)/3, a1 is 0 , your for loop step should be 1 instead of 3) The output should be(from left to right):
+c1b1a1
+c2b2a2
+c3b3a3
+...
+cnbnan
+
+Each combination of d should be divided by a line breaker. Please provide a HTML file with inline CSS and JavaScript for a webpage that meets the following suggestions:
+
+1. There is a input box on the page. Users will put a string like this to this input box "安堅濟竇東德西相沙靜望民望我睹觀不禮明範瑪安三方巴明居如華如迪瑪奇寧范羅巴利麥孟石鍾黃郭蘇龍羅龐李費黎". I'm also not sure how many characters each paragraph will have, but the length of the whole text is divisible by three
+
+2. There is a button under the input box. It will trigger your js to convert the input to the output
+
+3. Wrap the output to a div under the button
+
+4. The style of this webpage should be cyber punk

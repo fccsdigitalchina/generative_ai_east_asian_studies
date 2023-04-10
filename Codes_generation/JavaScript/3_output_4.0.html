@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberpunk Text Converter</title>
+    <style>
+        body {
+            background-color: #0f0f0f;
+            font-family: monospace;
+            color: #0ff;
+        }
+        input, button {
+            background-color: #1a1a1a;
+            border: none;
+            color: #0ff;
+            padding: 8px;
+            margin: 4px;
+        }
+        button:hover {
+            background-color: #2a2a2a;
+        }
+        #output {
+            white-space: pre-wrap;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cyberpunk Text Converter</h1>
+    <input type="text" id="input" placeholder="Enter the text here">
+    <button onclick="convertText()">Convert</button>
+    <div id="output"></div>
+
+    <script>
+        function convertText() {
+            const input = document.getElementById('input').value;
+            let output = '';
+            
+            if (input.length % 3 !== 0) {
+                alert('The input length is not divisible by 3.');
+                return;
+            }
+
+            const segmentLength = input.length / 3;
+
+            for (let i = 0; i < segmentLength; i++) {
+                const firstChar = input.charAt(2 * segmentLength + i);
+                const secondChar = input.charAt(segmentLength + i);
+                const thirdChar = input.charAt(i);
+                output += firstChar + secondChar + thirdChar + '\n';
+            }
+
+            document.getElementById('output').innerText = output;
+        }
+    </script>
+</body>
+</html>

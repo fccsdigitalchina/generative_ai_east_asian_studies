@@ -1,0 +1,13 @@
+To cite an anonymous calligraphy work, following the Chicago Manual of Style, you will need to provide as much information as possible to help readers identify the work. In your case, since you don't have the name of the author or the exact date, the best approach would be to provide a brief description of the work and the location where you saw it. Here is an example of how to cite it:
+
+Footnote/Endnote:
+
+Anonymous, Calligraphy work [Description of the work], date unknown, located at CBDB office, 1737 Cambridge Street, K304, MA, 02137, USA.
+If you are referring to the same work multiple times, you can use a shortened form in subsequent footnotes/endnotes:
+
+Anonymous, Calligraphy work.
+Bibliography:
+
+Anonymous. Calligraphy work. [Description of the work]. Date unknown. Located at CBDB office, 1737 Cambridge Street, K304, MA, 02137, USA.
+
+Note: In the [Description of the work], you should include a brief description of the work that includes any relevant details, such as the style of calligraphy, the material used, and any notable features or motifs.

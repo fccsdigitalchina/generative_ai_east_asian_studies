@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <Style id="label_style">
+      <IconStyle>
+        <scale>0</scale>
+      </IconStyle>
+      <LabelStyle>
+        <color>ff0000ff</color>
+        <scale>1.5</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon_style">
+      <IconStyle>
+        <scale>1.2</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Placemark>
+      <name>餘姚 (2)</name>
+      <styleUrl>#label_style</styleUrl>
+      <Point>
+        <coordinates>121.16,30.03</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>山陰 (6)</name>
+      <styleUrl>#label_style</styleUrl>
+      <Point>
+        <coordinates>122.12,29.55</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>會稽 (4)</name>
+      <styleUrl>#label_style</styleUrl>
+      <Point>
+        <coordinates>120.75,30.03</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>上虞 (1)</name>
+      <styleUrl>#label_style</styleUrl>
+      <Point>
+        <coordinates>120.87,30.03</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>蕭山 (1)</name>
+      <styleUrl>#label_style</styleUrl>
+      <Point>
+        <coordinates>120.95,30.16</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>新昌 (1)</name>
+      <styleUrl>#label_style</styleUrl>
+      <Point>
+        <coordinates>120.9,29.5</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>嵊縣 (1)</name>
+      <styleUrl>#label_style</styleUrl>
+      <Point>
+        <coordinates>120.8,29.6</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

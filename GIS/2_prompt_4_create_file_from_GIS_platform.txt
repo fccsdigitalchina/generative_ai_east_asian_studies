@@ -1,0 +1,2 @@
+Put the information from the list above into a schema like this with count information:<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"></kml>

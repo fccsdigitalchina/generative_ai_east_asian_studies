@@ -1,0 +1,23 @@
+This is the list of Zhejiang addresses in historical Chinese studies. Can you give me the approximate information for each address, and count how many times an address appeared in the list below:
+餘姚
+山陰
+會稽
+上虞
+山陰
+山陰
+會稽
+會稽
+餘姚
+蕭山
+會稽
+新昌
+山陰
+嵊縣
+山陰
+山陰
+山陰
+
+The output should be a table like this:
+id, name, x, y, count
+
+The most priority thing: I know these coordinates are approximate and ambiguous. Please just let me know your approximate information. These are just for reference.
