@@ -1,0 +1,66 @@
+I have the following social association types:
+c_assoc_type_id	c_assoc_type_desc	c_assoc_type_desc_chn
+01	Associations (General)	社會關係（籠統）
+0101	Associations (General)	社會關係（籠統）
+0102	Association through common membership	同為……之成員
+0103	Social Interactions	社會交際
+02	Scholarship	學術關係類
+0202	Teacher-Student	師生關係
+0203	Intellectual Affiliations	學術交往
+0204	Association by Scholarly Topic	學術主題相近
+0205	Association through common membership	同為……之成員
+0206	Academic Patronage	學術襄助
+0207	Literary and Artistic Affiliations	文學藝術交往
+0208	Intellectual Attacks	學術攻訐
+03	Friendship	朋友關係類
+0301	Friendship(General)	朋友關係（籠統）
+04	Politics	政治關係類
+0401	Politics (General)	政治關係（籠統）
+0402	Connection via office (equal)	官場關係（平級）
+0403	Connection via office (subordinate)	官場關係（下屬）
+0404	Connection via office (superior)	官場關係（上司）
+0405	Supportive political association	政治奧援
+0406	Recommendation and sponsorship	薦舉保任
+0407	Oppositional political association	政治對抗
+05	Writings	著述關係類
+0501	Writings (General)	著述關係（籠統）
+0502	Commemorative Texts	記詠文字
+0503	Epitaphs	墓誌文字
+0504	Prefaces/Postfaces	序跋文字
+0505	Ritual Texts	禮儀文字
+0506	Biographical Texts	傳記文字
+0507	Explanatory Texts	論說文字
+0508	Mottos	箴銘文字
+0509	Correspondences	書札文字
+0510	Occasional Texts	應酬文字
+06	Military	軍事關係類
+0601	Military (General)	軍事關係（籠統）
+0602	Supportive military association	軍事支持
+0603	Oppositional military association	軍事對抗
+07	Medicine	醫療關係類
+0701	Medicine (General)	醫療關係（籠統）
+08	Religion	宗教關係類
+0801	Religion (General)	宗教關係（籠統）
+09	Family	家庭關係類
+0901	Family (General)	家庭關係（籠統）
+10	Finance	財務關係類
+1001	Finance (General)	財務關係（籠統）
+
+
+I have two person names:
+a
+b
+
+After you read a paragraph(para), please tell me the social association code for them. Don't use any knowledge outside of the para. The information that you need to capture to identify the social association but will be very close to the persons' name. The paragraph is classical Chinese. The output schema should be a table like this:
+|person 1|person 2|assoc_code|assoc|assoc_chn|positive/negative relationship|
+| -- | -- | -- | -- | -- | -- |
+|a|b|c_assoc_type_id|c_assoc_type_desc|c_assoc_type_desc_chn|positive/negative|
+
+Reason:
+[You will put your reason for choosing this association type here]
+
+Now:
+a is 徐几
+b is 何基
+para is:
+【徐几】，字字与，号进斋，崇安人。博通经史，尤精于易。景定间与【何基】同以布衣召补迪功郎，添差建宁府教授，兼建安书院山长，撰经义以训式多士。

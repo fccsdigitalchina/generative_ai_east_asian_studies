@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Line Chart with Linear Regression</title>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    #chart {
+      width: 100%;
+      max-width: 900px;
+    }
+  </style>
+</head>
+<body>
+  <div id="chart"></div>
+  <div id="results"></div>
+  <script>
+const data = [
+  { x_value: 1, x_label: "983-992", y_value: 1 },
+  { x_value: 2, x_label: "1003-1012", y_value: 4 },
+  { x_value: 3, x_label: "1013-1022", y_value: 6 },
+  { x_value: 4, x_label: "1023-1032", y_value: 4 },
+  { x_value: 5, x_label: "1033-1042", y_value: 13 },
+  { x_value: 6, x_label: "1043-1052", y_value: 14 },
+  { x_value: 7, x_label: "1053-1062", y_value: 19 },
+  { x_value: 8, x_label: "1063-1072", y_value: 10 },
+  { x_value: 9, x_label: "1073-1082", y_value: 24 },
+  { x_value: 10, x_label: "1083-1092", y_value: 14 },
+  { x_value: 11, x_label: "1093-1102", y_value: 12 },
+  { x_value: 12, x_label: "1103-1112", y_value: 22 },
+  { x_value: 13, x_label: "1113-1122", y_value: 23 },
+  { x_value: 14, x_label: "1123-1132", y_value: 17 },
+  { x_value: 15, x_label: "1133-1142", y_value: 22 },
+  { x_value: 16, x_label: "1143-1152", y_value: 20 },
+  { x_value: 17, x_label: "1153-1162", y_value: 18 },
+  { x_value: 18, x_label: "1163-1172", y_value: 33 },
+  { x_value: 19, x_label: "1173-1182", y_value: 20 },
+  { x_value: 20, x_label: "1183-1192", y_value: 21 },
+  { x_value: 21, x_label: "1193-1202", y_value: 27 },
+  { x_value: 22, x_label: "1203-1212", y_value: 27 },
+  { x_value: 23, x_label: "1213-1222", y_value: 25 },
+  { x_value: 24, x_label: "1223-1232", y_value: 35 },
+  { x_value: 25, x_label: "1233-1242", y_value: 21 },
+  { x_value: 26, x_label: "1243-1252", y_value: 19 },
+  { x_value: 27, x_label: "1253-1262", y_value: 41 },
+  { x_value: 28, x_label: "1263-1272", y_value: 25 },
+  { x_value: 29, x_label: "1273-1282", y_value: 3 },
+  { x_value: 30, x_label: "1313-1322", y_value: 2 },
+  { x_value: 31, x_label: "1323-1332", y_value: 4 },
+  { x_value: 32, x_label: "1363-1372", y_value: 10 },
+  { x_value: 33, x_label: "1383-1392", y_value: 30 },
+  { x_value: 34, x_label: "1393-1402", y_value: 15 },
+  { x_value: 35, x_label: "1403-1412", y_value: 27 },
+  { x_value: 36, x_label: "1413-1422", y_value: 18 },
+  { x_value: 37, x_label: "1423-1432", y_value: 9 },
+  { x_value: 38, x_label: "1433-1442", y_value: 11 },
+  { x_value: 39, x_label: "1443-1452", y_value: 14 },
+  { x_value: 40, x_label: "1453-1462", y_value: 27 },
+  { x_value: 41, x_label: "1463-1472", y_value: 39 },
+  { x_value: 42, x_label: "1473-1482", y_value: 40 },
+  { x_value: 43, x_label: "1483-1492", y_value: 42 },
+  { x_value: 44, x_label: "1493-1502", y_value: 53 },
+  { x_value: 45, x_label: "1503-1512", y_value: 29 },
+  { x_value: 46, x_label: "1513-1522", y_value: 44 },
+  { x_value: 47, x_label: "1523-1532", y_value: 46 },
+  { x_value: 48, x_label: "1533-1542", y_value: 68 },
+  { x_value: 49, x_label: "1543-1552", y_value: 49 },
+  { x_value: 50, x_label: "1553-1562", y_value: 53 },
+  { x_value: 51, x_label: "1563-1572", y_value: 45 },
+  { x_value: 52, x_label: "1573-1582", y_value: 39 },
+  { x_value: 53, x_label: "1583-1592", y_value: 36 },
+  { x_value: 54, x_label: "1593-1602", y_value: 24 },
+  { x_value: 55, x_label: "1603-1612", y_value: 23 },
+  { x_value: 56, x_label: "1613-1622", y_value: 46 },
+  { x_value: 57, x_label: "1623-1632", y_value: 28 },
+  { x_value: 58, x_label: "1633-1643", y_value: 41 }
+];
+
+
+
+    function calculateMean(arr) {
+      const sum = arr.reduce((acc, val) => acc + val, 0);
+      return sum / arr.length;
+    }
+
+    function linearRegression(xs, ys) {
+      const xMean = calculateMean(xs);
+      const yMean = calculateMean(ys);
+
+      const xyProductSum = xs.reduce((acc, x, i) => acc + (x - xMean) * (ys[i] - yMean), 0);
+      const xxProductSum = xs.reduce((acc, x) => acc + (x - xMean) * (x - xMean), 0);
+
+      const slope = xyProductSum / xxProductSum;
+      const intercept = yMean - slope * xMean;
+
+      return { slope, intercept };
+    }
+
+    const xs = data.map((d) => d.x_value);
+    const ys = data.map((d) => d.y_value);
+    const { slope, intercept } = linearRegression(xs, ys);
+
+    const regressionLineX = [Math.min(...xs), Math.max(...xs)];
+    const regressionLineY = regressionLineX.map((x) => slope * x + intercept);
+
+    const lineChartData = [
+      {
+        x: data.map((d) => d.x_label),
+        y: ys,
+        mode: "lines+markers",
+        name: "Data",
+        line: { shape: "spline" }
+      },
+      {
+        x: regressionLineX.map((x) => data[x - 1].x_label),
+        y: regressionLineY,
+        mode: "lines",
+        name: "Linear Regression",
+        line: { color: "red" }
+      }
+    ];
+
+    const layout = {
+      title: "Line Chart with Linear Regression",
+      xaxis: { title: "X Axis" },
+      yaxis: { title: "Y Axis" }
+    };
+
+    Plotly.newPlot("chart", lineChartData, layout);
+
+    const resultsDiv = document.getElementById("results");
+    resultsDiv.innerHTML = `
+      <p>Regression function: y = ${slope.toFixed(2)} * x + ${intercept.toFixed(2)}</p>
+      <p>n: ${data.length}</p>
+      <p>x_sum: ${xs.reduce((a, b) => a + b, 0)}</p>
+      <p>y_sum: ${ys.reduce((a, b) => a + b, 0)}</p>
+      <p>xx_sum: ${xs.reduce((a, x) => a + x * x, 0)}</p>
+      <p>xy_sum: ${xs.reduce((a, x, i) => a + x * ys[i], 0)}</p>
+    `;
+
+  </script>
+</body>
+</html>
+

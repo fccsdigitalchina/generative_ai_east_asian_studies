@@ -1,0 +1,65 @@
+Please provide a single HTML file with inline CSS and JavaScript for a webpage that meets the following suggestions:
+
+1. Create a line chart using the following data, where the "Row Labels" are on the x-axis and the "Count of Entry Year" is on the y-axis:
+Row Labels	Count of Entry Year
+983-992	1
+1003-1012	4
+1013-1022	6
+1023-1032	4
+1033-1042	13
+1043-1052	14
+1053-1062	19
+1063-1072	10
+1073-1082	24
+1083-1092	14
+1093-1102	12
+1103-1112	22
+1113-1122	23
+1123-1132	17
+1133-1142	22
+1143-1152	20
+1153-1162	18
+1163-1172	33
+1173-1182	20
+1183-1192	21
+1193-1202	27
+1203-1212	27
+1213-1222	25
+1223-1232	35
+1233-1242	21
+1243-1252	19
+1253-1262	41
+1263-1272	25
+1273-1282	3
+1313-1322	2
+1323-1332	4
+1363-1372	10
+1383-1392	30
+1393-1402	15
+1403-1412	27
+1413-1422	18
+1423-1432	9
+1433-1442	11
+1443-1452	14
+1453-1462	27
+1463-1472	39
+1473-1482	40
+1483-1492	42
+1493-1502	53
+1503-1512	29
+1513-1522	44
+1523-1532	46
+1533-1542	68
+1543-1552	49
+1553-1562	53
+1563-1572	45
+1573-1582	39
+1583-1592	36
+1593-1602	24
+1603-1612	23
+1613-1622	46
+1623-1632	28
+1633-1643	41
+
+2. Calculate the linear regression function for the given list using the least squares method. Overlay the regression line on the line chart and display the regression function as part of the chart.
+3. Provide the necessary library citations or links to external resources used in the code, specifically from CDN sources.

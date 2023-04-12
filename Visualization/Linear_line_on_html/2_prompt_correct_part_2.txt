@@ -1,0 +1,66 @@
+Please provide a single HTML file with inline CSS and JavaScript for a webpage that meets the following suggestions:
+
+1. Create a line chart using the following data, where the "x_lable" are the labels on the x-axis and the y_value is on the y-axis:
+x_value	x_lable	y_value
+1	983-992	1
+2	1003-1012	4
+3	1013-1022	6
+4	1023-1032	4
+5	1033-1042	13
+6	1043-1052	14
+7	1053-1062	19
+8	1063-1072	10
+9	1073-1082	24
+10	1083-1092	14
+11	1093-1102	12
+12	1103-1112	22
+13	1113-1122	23
+14	1123-1132	17
+15	1133-1142	22
+16	1143-1152	20
+17	1153-1162	18
+18	1163-1172	33
+19	1173-1182	20
+20	1183-1192	21
+21	1193-1202	27
+22	1203-1212	27
+23	1213-1222	25
+24	1223-1232	35
+25	1233-1242	21
+26	1243-1252	19
+27	1253-1262	41
+28	1263-1272	25
+29	1273-1282	3
+30	1313-1322	2
+31	1323-1332	4
+32	1363-1372	10
+33	1383-1392	30
+34	1393-1402	15
+35	1403-1412	27
+36	1413-1422	18
+37	1423-1432	9
+38	1433-1442	11
+39	1443-1452	14
+40	1453-1462	27
+41	1463-1472	39
+42	1473-1482	40
+43	1483-1492	42
+44	1493-1502	53
+45	1503-1512	29
+46	1513-1522	44
+47	1523-1532	46
+48	1533-1542	68
+49	1543-1552	49
+50	1553-1562	53
+51	1563-1572	45
+52	1573-1582	39
+53	1583-1592	36
+54	1593-1602	24
+55	1603-1612	23
+56	1613-1622	46
+57	1623-1632	28
+58	1633-1643	41
+
+2. Calculate the linear regression function for the given list using the function you just generated. Overlay the regression line on the line chart.
+3. Display the regression function, n, x_sum, y_sum, xx_sum, xy_sum on the page. 
+4. Provide the necessary library citations or links to external resources used in the code, specifically from CDN sources.

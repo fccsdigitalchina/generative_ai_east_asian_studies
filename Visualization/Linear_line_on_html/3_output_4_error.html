@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Line Chart with Linear Regression</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #chart {
+            width: 80%;
+            height: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div id="chart"></div>
+    <script>
+        const data = [
+			{x: "983-992", y: 1},
+    {x: "1003-1012", y: 4},
+    {x: "1013-1022", y: 6},
+    {x: "1023-1032", y: 4},
+    {x: "1033-1042", y: 13},
+    {x: "1043-1052", y: 14},
+    {x: "1053-1062", y: 19},
+    {x: "1063-1072", y: 10},
+    {x: "1073-1082", y: 24},
+    {x: "1083-1092", y: 14},
+    {x: "1093-1102", y: 12},
+    {x: "1103-1112", y: 22},
+    {x: "1113-1122", y: 23},
+    {x: "1123-1132", y: 17},
+    {x: "1133-1142", y: 22},
+    {x: "1143-1152", y: 20},
+    {x: "1153-1162", y: 18},
+    {x: "1163-1172", y: 33},
+    {x: "1173-1182", y: 20},
+    {x: "1183-1192", y: 21},
+    {x: "1193-1202", y: 27},
+    {x: "1203-1212", y: 27},
+    {x: "1213-1222", y: 25},
+    {x: "1223-1232", y: 35},
+    {x: "1233-1242", y: 21},
+    {x: "1243-1252", y: 19},
+    {x: "1253-1262", y: 41},
+    {x: "1263-1272", y: 25},
+    {x: "1273-1282", y: 3},
+    {x: "1313-1322", y: 2},
+    {x: "1323-1332", y: 4},
+    {x: "1363-1372", y: 10},
+    {x: "1383-1392", y: 30},
+    {x: "1393-1402", y: 15},
+    {x: "1403-1412", y: 27},
+    {x: "1413-1422", y: 18},
+    {x: "1423-1432", y: 9},
+    {x: "1433-1442", y: 11},
+    {x: "1443-1452", y: 14},
+    {x: "1453-1462", y: 27},
+    {x: "1463-1472", y: 39},
+    {x: "1473-1482", y: 40},
+    {x: "1483-1492", y: 42},
+    {x: "1493-1502", y: 53},
+    {x: "1503-1512", y: 29},
+    {x: "1513-1522", y: 44},
+    {x: "1523-1532", y: 46},
+    {x: "1533-1542", y: 68},
+    {x: "1543-1552", y: 49},
+    {x: "1553-1562", y: 53},
+    {x: "1563-1572", y: 45},
+    {x: "1573-1582", y: 39},
+    {x: "1583-1592", y: 36},
+    {x: "1593-1602", y: 24},
+    {x: "1603-1612", y: 23},
+    {x: "1613-1622", y: 46},
+    {x: "1623-1632", y: 28},
+    {x: "1633-1643", y: 41}
+        ];
+
+        function leastSquares(data) {
+            let x_sum = 0;
+            let y_sum = 0;
+            let xy_sum = 0;
+            let xx_sum = 0;
+            const n = data.length;
+
+            for (let i = 0; i < n; i++) {
+                x_sum += i;
+                y_sum += data[i].y;
+                xy_sum += i * data[i].y;
+                xx_sum += i * i;
+            }
+
+            const slope = (n * xy_sum - x_sum * y_sum) / (n * xx_sum - x_sum * x_sum);
+            const intercept = (y_sum - slope * x_sum) / n;
+
+            return {slope, intercept};
+        }
+
+        const {slope, intercept} = leastSquares(data);
+        const regressionData = data.map((point, index) => {
+            return {
+                x: point.x,
+                y: slope * index + intercept
+            };
+        });
+
+        const lineChartData = {
+            x: data.map(point => point.x),
+            y: data.map(point => point.y),
+            mode: 'lines+markers',
+            name: 'Data'
+        };
+
+        const regressionLineData = {
+            x: regressionData.map(point => point.x),
+            y: regressionData.map(point => point.y),
+            mode: 'lines',
+            name: `Regression (y = ${slope.toFixed(2)}x + ${intercept.toFixed(2)})`,
+            line: {
+                dash: 'dash'
+            }
+        };
+
+        const layout = {
+            title: 'Line Chart with Linear Regression',
+            xaxis: {title: 'Row Labels'},
+            yaxis: {title: 'Count of Entry Year'}
+        };
+
+        Plotly.newPlot('chart', [lineChartData, regressionLineData], layout);
+    </script>
+</body>
+</html>

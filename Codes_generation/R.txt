@@ -1,1 +1,1 @@
-See ./Correlation_test
+./Correlation_test/Righteous_person

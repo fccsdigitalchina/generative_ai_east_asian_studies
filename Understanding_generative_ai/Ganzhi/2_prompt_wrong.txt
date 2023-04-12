@@ -1,0 +1,115 @@
+Most important thing: Don't use any knowledge beyond the information in the table below. 
+Output the year from these Chinese reign year information. Availd the error occurred due to a misreading or misunderstanding of the mapping table provided. There is not typos in the questions. Don't add or subtract one complete cycle of 60 after you get your result. The first year of a reign begin from 1, instead of 0
+
+弘治乙丑
+正德丁卯
+正德壬申
+正德戊寅
+
+
+The output should be a table like this:
+| input | output |
+| -- | -- | 
+
+This is the table for your conversion
+c_dynasty_chn	c_nianhao_chn	c_firstyear	c_firstyear_ganzhi
+明	建文	1399	己卯
+明	永樂	1403	癸未
+明	洪熙	1425	乙巳
+明	宣德	1426	丙午
+明	正統	1436	丙辰
+明	景泰	1450	庚午
+明	天順	1457	丁丑
+明	成化	1465	乙酉
+明	弘治	1488	戊申
+明	正德	1506	丙寅
+明	嘉靖	1522	壬午
+明	隆慶	1567	丁卯
+明	萬曆	1573	癸酉
+清	天命	1616	丙辰
+明	泰昌	1620	庚申
+明	天啟	1621	辛酉
+清	天聰	1627	丁卯
+明	崇禎	1628	戊辰
+清	崇德	1636	丙子
+清	順治	1644	甲申
+南明	弘光	1644	甲申
+	大順	1644	甲申
+	永昌	1644	甲申
+南明	隆武	1645	乙酉
+南明	紹武	1646	丙戌
+南明	永曆	1647	丁亥
+清	康熙	1662	壬寅
+清	雍正	1723	癸卯
+清	乾隆	1736	丙辰
+清	嘉慶	1796	丙辰
+清	道光	1821	辛巳
+清	咸豐	1851	辛亥
+清	同治	1862	壬戌
+清	光緒	1875	乙亥
+清	宣統	1909	己酉
+中華民國	中華民國	1912	壬子
+
+This is the mapping between ganzhi and number for calculation
+
+ganzhi	number
+甲子	1
+乙丑	2
+丙寅	3
+丁卯	4
+戊辰	5
+己巳	6
+庚午	7
+辛未	8
+壬申	9
+癸酉	10
+甲戌	11
+乙亥	12
+丙子	13
+丁丑	14
+戊寅	15
+己卯	16
+庚辰	17
+辛巳	18
+壬午	19
+癸未	20
+甲申	21
+乙酉	22
+丙戌	23
+丁亥	24
+戊子	25
+己丑	26
+庚寅	27
+辛卯	28
+壬辰	29
+癸巳	30
+甲午	31
+乙未	32
+丙申	33
+丁酉	34
+戊戌	35
+己亥	36
+庚子	37
+辛丑	38
+壬寅	39
+癸卯	40
+甲辰	41
+乙巳	42
+丙午	43
+丁未	44
+戊申	45
+己酉	46
+庚戌	47
+辛亥	48
+壬子	49
+癸丑	50
+甲寅	51
+乙卯	52
+丙辰	53
+丁巳	54
+戊午	55
+己未	56
+庚申	57
+辛酉	58
+壬戌	59
+癸亥	60
