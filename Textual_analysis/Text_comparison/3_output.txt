@@ -1,0 +1,7 @@
+The sentence in Text A	The sentence in Text B	Difference	Analysis
+問聖愚一致, 始終本末同條共貫處何如?	問聖愚一致, 始終本末同條共貫處何如?	None	No difference between the sentences.
+曰孔子, 無言之教至精者也, 百姓日用飲食至粗者也.	曰孔子, 無言之教至精者也, 百姓日用飲食至粗者也.	None	No difference between the sentences.
+然無言此虚明也, 日用飲食此虚明也.	然無言此虚明也, 虚明常存動靜貫矣, 日用飲食此虚明也, 虚明常存動静貫矣.	Text B has additional phrases: "虚明常存動靜貫矣" and "虚明常存動静貫矣".	Text B elaborates on the idea of "虚明" by mentioning its constant presence in both movement and stillness.
+故曰人莫不飲食, 鮮能知味也.	故曰人莫不飲食, 鮮能知味也.	None	No difference between the sentences.
+食能知味, 行能知步, 瞬能知存, 息能知養.	食能知味, 行能知步, 瞬能知存, 息能知養, 則虚明常在.	Text B has an additional phrase: "則虚明常在".	Text B emphasizes the continuous presence of "虚明" by stating that it is always present.
+為子知孝, 為臣知忠, 至於知化知天一也.	為子知孝, 為臣知忠, 至於知化知天一也.	None	No difference between the sentences.

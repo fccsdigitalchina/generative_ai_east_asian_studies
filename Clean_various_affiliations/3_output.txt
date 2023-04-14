@@ -1,0 +1,31 @@
+Here is the cleaned list of affiliations and their frequencies:
+
+| Cleaned Affiliation                                       | Frequency |
+|-----------------------------------------------------------|-----------|
+| Department of East Asian Languages and Civilizations (EALC)| 16        |
+| Institute for Quantitative Social Science (IQSS)          | 9         |
+| Regional Studies-East Asia (RSEA)                          | 9         |
+| Graduate School of Arts and Sciences (GSAS)                | 4         |
+| Harvard University                                         | 3         |
+| Harvard Divinity School                                    | 2         |
+| Harvard Law School Library                                 | 2         |
+| History of Art and Architecture                            | 1         |
+| East Asian Studies and History                             | 1         |
+| Art History/East Asian Studies - Univ. of Wisconsin        | 1         |
+| Harvard-Yenching Library                                   | 1         |
+| Harvard Library Information and Technical Services (HLITS) | 1         |
+| Yenching Institute                                         | 1         |
+| Professor, National Chengchi University/Harvard Yenching Visiting Scholar | 1 |
+| Harvard College/Faculty of Arts and Sciences (FAS)         | 1         |
+| Computer Science and Philosophy at the College             | 1         |
+| Harvard Economics                                          | 1         |
+| Weatherhead Center                                         | 1         |
+| Imaging Services Department, Widener Library               | 1         |
+| Japan Digital Research Center, Reischauer Institute of Japanese Studies (RIJS) | 1 |
+| College, undecided                                         | 1         |
+| Committee on the Study of Religion                         | 1         |
+| Comparative Literature, GSAS                               | 1         |
+| Harvard Divinity School, East Asian Religions              | 1         |
+| College, East Asian Studies (EAS) and Computer Science (CS)| 1         |
+| Shanghai Jiao Tong University                              | 1         |
+| Inner Asian and Altaic Studies                             | 1         |

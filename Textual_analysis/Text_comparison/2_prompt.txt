@@ -1,0 +1,13 @@
+Instruction:
+Punctuate and compare the two classical Chinese texts. Output a table that includes the following information for each sentence:
+- The punctuated sentence in Text A
+- The corresponding punctuated sentence in Text B
+- Any differences between the two sentences
+- An analysis of those differences
+
+Output a table in this format:
+The sentence in Text A |The sentence in Text B|Difference|Analysis
+
+Input:
+	- Text A: 問聖愚一致始終本末同條共貫處何如曰孔子無言之教至精者也百姓日用飲食至粗者也然無言此虚明也日用飲食此虚明也故曰人莫不飲食鮮能知味也食能知味行能知步瞬能知存息能知養為子知孝為臣知忠至於知化知天一也
+	- Text B:問聖愚一致始終本末同條共貫處何如曰孔子無言之教至精者也百姓日用飲食至粗者也然無言此虚明也虚明常存動靜貫矣日用飲食此虚明也虚明常存動静貫矣故曰人莫不飲食鮮能知味也食能知味行能知步瞬能知存息能知養則虚明常在為子知孝為臣知忠至於知化知天一也

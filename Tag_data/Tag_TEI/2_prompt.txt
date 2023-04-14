@@ -1,0 +1,131 @@
+Please tag poems with the <xmlns="http://www.tei-c.org/ns/1.0">. 
+
+Here is an example:
+<text xmlns="http://www.tei-c.org/ns/1.0" xml:id="d1">
+<body xml:id="d2">
+<div1 type="book" xml:id="d3">
+<head>Songs of Innocence</head>
+<pb n="4"/>
+<div2 type="poem" xml:id="d4">
+<head>Introduction</head>
+<lg type="stanza">
+<l>Piping down the valleys wild, </l>
+<l>Piping songs of pleasant glee, </l>
+<l>On a cloud I saw a child, </l>
+<l>And he laughing said to me: </l>
+</lg>
+<lg type="stanza">
+<l>"Pipe a song about a Lamb!" </l>
+<l>So I piped with merry chear. </l>
+<l>"Piper, pipe that song again;" </l>
+<l>So I piped, he wept to hear. </l>
+</lg>
+<lg type="stanza">
+<l>"Drop thy pipe, thy happy pipe; </l>
+<l>Sing thy songs of happy chear:" </l>
+<l>So I sung the same again, </l>
+<l>While he wept with joy to hear. </l>
+</lg>
+<lg type="stanza">
+<l>"Piper, sit thee down and write </l>
+<l>In a book, that all may read." </l>
+<l>So he vanis​'d from my sight, </l>
+<l>And I pluck​'d a hollow reed, </l>
+</lg>
+<lg type="stanza">
+<l>And I made a rural pen, </l>
+<l>And I stain​'d the water clear, </l>
+<l>And I wrote my happy songs </l>
+<l>Every child may joy to hear. </l>
+</lg>
+</div2>
+<pb n="5"/>
+<div2 type="poem" xml:id="d5">
+<head>The Shepherd</head>
+<lg type="stanza">
+<l>How sweet is the Shepherd​'s sweet lot! </l>
+<l>From the morn to the evening he strays; </l>
+<l>He shall follow his sheep all the day, </l>
+<l>And his tongue shall be filled with praise. </l>
+</lg>
+<lg type="stanza">
+<l>For he hears the lamb​'s innocent call, </l>
+<l>And he hears the ewe​'s tender reply; </l>
+<l>He is watchful while they are in peace, </l>
+<l>For they know when their Shepherd is nigh. </l>
+</lg>
+</div2>
+<pb n="6"/>
+<div2 type="poem" xml:id="d6">
+<head>The Ecchoing Green</head>
+<lg type="stanza">
+<l>The Sun does arise, </l>
+<l>And make happy the skies; </l>
+<l>The merry bells ring </l>
+<l>To welcome the Spring; </l>
+<l>The sky​-lark and thrush, </l>
+<l>The birds of the bush, </l>
+<l>Sing louder around </l>
+<l>To the bells' chearful sound, </l>
+<l>While our sports shall be seen </l>
+<l>On the Ecchoing Green. </l>
+</lg>
+<lg type="stanza">
+<l>Old John, with white hair, </l>
+<l>Does laugh away care, </l>
+<l>Sitting under the oak, </l>
+<l>Among the old folk. <pb n="7"/></l>
+<l>They laugh at our play, </l>
+<l>And soon they all say: </l>
+<l>"Such, such were the joys </l>
+<l>When we all, girls & boys, </l>
+<l>In our youth time were seen </l>
+<l>On the Ecchoing Green." </l>
+</lg>
+<lg type="stanza">
+<l>Till the little ones, weary, </l>
+<l>No more can be merry; </l>
+<l>The sun does descend, </l>
+<l>And our sports have an end. </l>
+<l>Round the laps of their mothers </l>
+<l>Many sisters and brothers, </l>
+<l>Like birds in their nest, </l>
+<l>Are ready for rest, </l>
+<l>And sport no more seen </l>
+<l>On the darkening Green. </l>
+</lg>
+</div2>
+<pb n="8"/>
+<div2 type="poem" xml:id="d7">
+<head>The Lamb</head>
+<lg type="stanza">
+<l rend="indent">Little lamb, who made thee? </l>
+<l rend="indent">Dost thou know who made thee? </l>
+<l>Gave thee life & bid thee feed, </l>
+<l>By the stream & o​'er the mead; </l>
+<l>Gave thee clothing of delight, </l>
+<l>Softest clothing, wooly, bright; </l>
+<l>Gave thee such a tender voice, </l>
+<l>Making all the vales rejoice? </l>
+<l rend="indent">Little Lamb, who made thee? </l>
+<l rend="indent">Dost thou know who made thee? </l>
+</lg>
+<lg type="stanza">
+<l rend="indent">Little Lamb, I​'ll tell thee, </l>
+<l rend="indent">Little Lamb, I​'ll tell thee: </l>
+<l>He is called by thy name, </l>
+<l>For he calls himself a Lamb. </l>
+<l>He is meek & he is mild; </l>
+<l>He became a little child. </l>
+<l>I a child & thou a lamb. </l>
+<l>We are called by his name. </l>
+<l rend="indent">Little Lamb, God bless thee! </l>
+<l rend="indent">Little Lamb, God bless thee!</l>
+</lg>
+</div2>
+<!-- ... -->
+</div1>
+</body>
+</text>
+
+I will give you the poem in the next thread.

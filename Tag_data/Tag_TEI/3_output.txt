@@ -1,0 +1,34 @@
+Here is the poem tagged using the TEI format:
+
+xml
+<text xmlns="http://www.tei-c.org/ns/1.0" xml:id="d1">
+  <body xml:id="d2">
+    <div1 type="book" xml:id="d3">
+      <div2 type="poem" xml:id="d4">
+        <head>How do I love thee? Let me count the ways.</head>
+        <lg type="stanza">
+          <l>I love thee to the depth and breadth and height</l>
+          <l>My soul can reach, when feeling out of sight</l>
+          <l>For the ends of Being and ideal Grace.</l>
+        </lg>
+        <lg type="stanza">
+          <l>I love thee to the level of everyday's</l>
+          <l>Most quiet need, by sun and candle-light.</l>
+          <l>I love thee freely, as men strive for Right;</l>
+          <l>I love thee purely, as they turn from Praise.</l>
+        </lg>
+        <lg type="stanza">
+          <l>I love thee with a passion put to use</l>
+          <l>In my old griefs, and with my childhood's faith.</l>
+          <l>I love thee with a love I seemed to lose</l>
+          <l>With my lost saints,—I love thee with the breath,</l>
+          <l>Smiles, tears, of all my life!—and, if God choose,</l>
+          <l>I shall but love thee better after death.</l>
+        </lg>
+      </div2>
+    </div1>
+  </body>
+</text>
+
+
+I have tagged the poem using the appropriate structure, including stanza and line tags. Let me know if you need any further assistance.
