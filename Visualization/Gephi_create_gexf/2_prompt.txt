@@ -1,0 +1,20 @@
+Please create a gephi input (gexf) for me by using these as nodes:
+1 王安石
+2 朱熹
+3 蘇軾
+4 蘇轍
+5 蘇洵
+6 呂祖謙
+7 黃庭堅
+8 呂大臨
+and these as edges:
+1 2
+2 3
+3 4
+4 1
+1 3
+2 4
+5 1
+6 2
+7 3
+8 4
