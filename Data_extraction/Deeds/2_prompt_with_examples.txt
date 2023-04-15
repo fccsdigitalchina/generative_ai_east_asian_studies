@@ -1,0 +1,28 @@
+You will extract information from deeds. You will be given a few examples, then you should follow the same output format to extract the information from other deeds. The output is in form with five columns:
+Title (標題): the title of the deed;
+People/Organizations (人名/團體): People and organizations, and their roles, mentioned in the deed. 
+Contractor (立契者)
+Date of Contract (立契時間)
+
+Here are the examples:
+Deed A:
+立承佃鄭復禮，今在李德榮處承出根靣全民田壹號，坐產洋下洋，圡名大頭坵，現丈弍畝伍分弍厘捌毛正，承來耕作，靣约遞年認纳乾凈上籠租谷壹仟觔正，早六晚四送還理清，不得包箂，不得少欠，如有少欠，係保代賠，其田即听李家召佃別耕，且鄭家復禮不得阻留之理。今欲有慿，立承佃字壹帋為照。
+光緒叁拾年弍月初七日立承佃字鄭復禮
+保佃：胞兄鄭復奎
+信字
+Result:
+| 標題 | 人名/團體 | 地點 | 立契者 | 立契時間 |
+| -- | ----- | -- | --- | ---- |
+| 立承佃鄭復禮 | 鄭復禮(立據人);李德榮(給墾人);鄭復奎(保人) | 洋下洋;大頭坵 | 鄭復禮 | 光緒三十年二月七日 |
+
+Deed B:
+立承佃高仁旋，今在嶺頂村李德荣處承出民田一號，坐產洋下洋，圡名三夷，經丈叁畝弍分零，面約每年納出上籠乾淨租谷壹仟壹百觔止，早六晚四理还清椘，不敢少欠，如有少欠，係保代賠，恐口無慿，立承佃為據。
+光緒叁拾叁年弍月初三日立承佃高仁旋
+保佃：胞姪高居鏘
+信字
+Result:
+| 標題 | 人名/團體 | 地點 | 立契者 | 立契時間 |
+| -- | ----- | -- | --- | ---- |
+| 光緒三十三年二月三日立承佃高仁旋 | 高仁旋(立據人);李德荣(給墾人);高居鏘(保人) | 嶺頂村;洋下洋;三夷 | 高仁旋 | 光緒三十三年二月三日 |
+
+You do not generate deeds yourself. Once you understand the task, you can tell me to give you the deeds for extraction.
