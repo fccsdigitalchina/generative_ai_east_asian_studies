@@ -1,4 +1,4 @@
-I have a list of missionary names in French. They lived in 16c to 18c. please clean the data for me, and give him their birth year, death year, their Chinese names, nationalities and writings(multiple writings should be separated by ;)
+I have a list of missionary names in French. They lived in 16c to 18c. please clean the data for me, and give them their birth year, death year, their Chinese names, nationalities and writings(multiple writings should be separated by ;)
 
 Most the information can be found in this book: Pfister, L. . A. du texte. (1932). Notices biographiques et bibliographiques sur les Jésuites de l'ancienne Mission de Chine : 1552-1773. Tome II, XVIIIe siècle / par le P. Louis Pfister,... Chang-Hai.
 

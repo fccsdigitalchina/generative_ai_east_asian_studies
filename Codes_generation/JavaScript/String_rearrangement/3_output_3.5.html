@@ -1,126 +1,31 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Cyberpunk Text Converter</title>
-	<style>
-		body {
-			background-color: #000;
-			color: #fff;
-			font-family: 'Arial', sans-serif;
-			font-size: 16px;
-			line-height: 1.5;
-			margin: 0;
-			padding: 0;
-		}
-
-		h1 {
-			text-align: center;
-			margin: 2rem 0;
-		}
-
-		.container {
-			max-width: 800px;
-			margin: 0 auto;
-			padding: 1rem;
-		}
-
-		.form {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			margin-bottom: 2rem;
-		}
-
-		.form__label {
-			font-size: 1.2rem;
-			margin-bottom: 0.5rem;
-		}
-
-		.form__input {
-			font-size: 1rem;
-			padding: 0.5rem;
-			border-radius: 0.25rem;
-			border: none;
-			margin-bottom: 1rem;
-			width: 100%;
-			max-width: 600px;
-			background-color: rgba(255, 255, 255, 0.1);
-			color: #fff;
-			box-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.1);
-		}
-
-		.btn {
-			padding: 0.5rem 1rem;
-			font-size: 1rem;
-			background-color: rgba(255, 255, 255, 0.1);
-			color: #fff;
-			border: none;
-			border-radius: 0.25rem;
-			cursor: pointer;
-			transition: background-color 0.2s ease-out;
-		}
-
-		.btn:hover {
-			background-color: rgba(255, 255, 255, 0.2);
-		}
-
-		.output {
-			background-color: rgba(255, 255, 255, 0.1);
-			padding: 1rem;
-			border-radius: 0.25rem;
-			max-width: 600px;
-			overflow-wrap: break-word;
-			word-break: break-all;
-		}
-
-		.output__item {
-			margin-bottom: 0.5rem;
-		}
-	</style>
-</head>
-<body>
-	<header>
-		<h1>Cyberpunk Text Converter</h1>
-	</header>
-	<main class="container">
-		<form class="form">
-			<label class="form__label" for="input-text">Enter Text</label>
-			<input class="form__input" type="text" id="input-text" placeholder="Type or paste your text here...">
-			<button class="btn" type="button" id="convert-btn">Convert</button>
-		</form>
-		<div class="output" id="output"></div>
-	</main>
-	<script>
-		const convertText = () => {
-			const inputText = document.getElementById('input-text').value.trim();
-			const outputDiv = document.getElementById('output');
-
-			if (inputText.length % 3 !== 0) {
-				alert('The length of the text must be divisible by 3!');
-				return;
-			}
-
-			const paragraphLength = inputText.length / 3;
-			let dList = '';
-
-			for (let i = 0; i < paragraphLength; i++) {
-				const cIndex = paragraphLength * 2
-                const bIndex = paragraphLength;
-			const aIndex = 0;
-
-			const cChar = inputText[cIndex + i];
-			const bChar = inputText[bIndex + i];
-			const aChar = inputText[aIndex + i];
-
-			const dItem = `${cChar}${bChar}${aChar}`;
-			dList += `${dItem}<br>`;
-		}
-
-		outputDiv.innerHTML = dList;
-	};
-
-	const convertBtn = document.getElementById('convert-btn');
-	convertBtn.addEventListener('click', convertText);
-</script>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <title>Disney Style Converter</title>
+  </head>
+  <body style="background-color: #f8d6ff;">
+    <h1 style="font-family: 'Waltograph Regular', cursive; font-size: 48px;">Disney Style Converter</h1>
+    <label for="input" style="font-family: 'Waltograph Regular', cursive; font-size: 24px;">Input:</label>
+    <br>
+    <input type="text" id="input" style="font-family: 'Waltograph Regular', cursive; font-size: 24px;">
+    <br><br>
+    <button onclick="convertInput()" style="font-family: 'Waltograph Regular', cursive; font-size: 24px; background-color: #ffcd58; border: none; padding: 10px 20px;">Convert</button>
+    <br><br>
+    <div id="output" style="font-family: 'Waltograph Regular', cursive; font-size: 24px;"></div>
+  </body>
+  <script>
+    function convertInput() {
+      const input = document.getElementById("input").value;
+      const pLength = input.length / 3;
+      let d = "";
+      for (let i = 0; i < pLength; i++) {
+        const cIndex = pLength * 2 + i;
+        const bIndex = pLength + i;
+        const aIndex = i;
+        d += input.charAt(cIndex) + input.charAt(bIndex) + input.charAt(aIndex) + "<br>";
+      }
+      document.getElementById("output").innerHTML = d;
+    }
+  </script>
 </html>
