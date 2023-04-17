@@ -1,7 +1,7 @@
 Please provide a single HTML file with inline CSS and JavaScript for a webpage that meets the following suggestions:
 
-1. Create a line chart using the following data, where the "x_lable" are the labels on the x-axis and the y_value is on the y-axis:
-x_value	x_lable	y_value
+1. Create a line chart using the following data, where the "x_label" are the labels on the x-axis and the y_value is on the y-axis:
+x_value	x_label	y_value
 1	983-992	1
 2	1003-1012	4
 3	1013-1022	6

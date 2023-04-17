@@ -1,4 +1,4 @@
-Output the year from these Chinese reign year information. Don't use any knowledge beyond the information in the table below. There is no typos in the questions.
+Output the western year from this Chinese reign year information. Don't use any knowledge beyond the information in the table below. There are no typos in the questions.
 慶曆二年
 應順元年
 崇寧四年
