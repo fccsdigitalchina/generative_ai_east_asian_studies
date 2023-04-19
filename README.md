@@ -27,6 +27,6 @@ https://discord.gg/pAtyaB2yzx
 
 [China Biographical Database Project](https://projects.iq.harvard.edu/cbdb/home)
 
-## License
+## License 
 
-[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license.](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-blue.svg?style=flat)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
