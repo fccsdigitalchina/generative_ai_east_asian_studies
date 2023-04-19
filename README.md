@@ -29,4 +29,4 @@ https://discord.gg/pAtyaB2yzx
 
 ## License
 
-[reative Commons Attribution-NonCommercial-ShareAlike 4.0 International license.](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license.](https://creativecommons.org/licenses/by-nc-sa/4.0/)
