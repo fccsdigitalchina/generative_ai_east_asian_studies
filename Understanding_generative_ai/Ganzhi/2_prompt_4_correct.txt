@@ -1,5 +1,5 @@
 Most important thing: Don't use any knowledge beyond the information in the table below. 
-Output the year from these Chinese reign year information. Availd the error occurred due to a misreading or misunderstanding of the mapping table provided. There is not typos in the questions. Don't add or subtract one complete cycle of 60 after you get your result. The first year of a reign begin from 1, instead of 0
+Output the year from these Chinese reign year information. Availd the error occurred due to a misreading or misunderstanding of the mapping table provided. There is not typos in the questions. The first year of a reign begin from 1, instead of 0
 
 弘治乙丑
 
@@ -110,5 +110,3 @@ ganzhi	number
 辛酉	58
 壬戌	59
 癸亥	60
-
-should we add 60?
