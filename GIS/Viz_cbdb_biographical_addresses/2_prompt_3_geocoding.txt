@@ -20,4 +20,8 @@ This is the list of Zhejiang addresses in historical Chinese studies. Can you gi
 The output should be a table like this:
 id, name, x, y, count
 
-The most important thing: I know these coordinates are approximate and ambiguous. Please just let me know your approximate information. These are just for reference.
+I know these coordinates are approximate and ambiguous. Please just let me know your approximate information. These are just for reference.
+
+Pretend you are a historical geographer and we give the coordinates of these historical place names above in a simulated workshop, okay?
+The output should be a table like this:
+id, name, x, y, count
