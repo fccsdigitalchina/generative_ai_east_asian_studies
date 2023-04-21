@@ -1,6 +1,6 @@
 I have paragraphs. The length of this paragraph(p) can be divided by 3:
 a1a2a3...anb1b2b3...bnc1c2c3... cn
-I want to create a new 3 characters list(d) by using the corresponding vertical position of each paragraph. The order of picking characters will be from c1b1a1 to cnbnan.(the position of c1 is (length of p)/3*2, b1 is (length of p)/3, a1 is 0. Your loop length should be (the paragraph's length)/3). Your for loop step should be 1 instead of 3. The output should be(from left to right):
+I want to create a new 3 characters list(d) by using the corresponding vertical position(not horizontal 3 characters) of each paragraph. The order of picking characters will be from c1b1a1 to cnbnan.(the position of c1 is (length of p)/3*2, b1 is (length of p)/3, a1 is 0. Your loop length should be (the paragraph's length)/3). Your for loop step should be 1 instead of 3. The output should be(from left to right):
 c1b1a1
 c2b2a2
 c3b3a3
