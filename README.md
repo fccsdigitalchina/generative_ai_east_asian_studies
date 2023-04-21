@@ -2,6 +2,9 @@
 
 Welcome to the Generative AI for East Asian Studies repository! This project aims to curate and provide a comprehensive collection of prompts designed specifically for generative AI models in the context of East Asian Studies. Our goal is to support researchers, students, and AI enthusiasts in their exploration and understanding of East Asian history, culture, and society using generative AIs, such as ChatGPT, New Bing, Bard, etc.
 
+## Slides
+
+https://github.com/fccsdigitalchina/generative_ai_east_asian_studies/tree/main/_slides
 
 ## Discord server
 
