@@ -10,7 +10,7 @@ https://github.com/fccsdigitalchina/generative_ai_east_asian_studies/tree/main/_
 
 We welcome contributions to this repository! If you have new prompts or ideas to improve existing ones, don't hesitate to submit a PR or join our Discord server:
 
-https://discord.gg/pAtyaB2yzx
+https://discord.gg/6C6CkMhkcs
 
 ## Generative AI Plugins
 
