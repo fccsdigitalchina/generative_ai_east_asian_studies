@@ -1,0 +1,8 @@
+Create a blank sheet : title is each lunch or dinner from 8/1 to 8/10.
+
+example:
+
+| date |
+| - | - |
+| 8/1 lunch  |
+| 8/1 dinner |
