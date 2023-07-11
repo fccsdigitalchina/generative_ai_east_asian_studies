@@ -6,3 +6,18 @@ example:
 | - | - |
 | 8/1 lunch  |
 | 8/1 dinner |
+
+
+---
+
+Another example:
+
+Create a blank sheet : title is days from 10/23 to 11/5. raw indexes are morning, afternoon and night
+
+Example:
+
+|  | 10/23 | 10/24 |
+| - | - | - |
+| Morning  |||
+| Afternoon |||
+| Night |||
