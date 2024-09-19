@@ -1,10 +1,13 @@
-Don't run a Python program for this task. Please rewrite the following posting information into **posting address** and **official titles**. The output table should contain three columns:
+Don't run a python program for this task. Please rewrite the following posting information into **posting address** and **official titles**. The output table should contain three columns:
 
-1. **original_text**: The original posting information
-2. **posting_address_name**: The geographical or administrative location mentioned in the posting information
-3. **posting_office_name**: The formal official title related to the post.
+1. **original_text** The original posting information
+2. **posting_address_name** The geographical or administrative location mentioned in the posting information
+3. **posting_office_name** The formal official title related to the post.
 
-If the **posting_office_name** contains abbreviations or informal names, rewrite them into the formal official title. Ensure accurate extraction of both the **posting_address_name** and the **official title**.
+If the **posting_office_name** contains abbreviations or informal names, rewrite them to the formal official title.
+Ensure accurate extraction of both the **posting_address_name** and the **official title**.
+
+Ensure that only the table is generated as output.
 
 ### List of Posting Information:
 
