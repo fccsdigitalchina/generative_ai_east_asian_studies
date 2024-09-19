@@ -1,0 +1,40 @@
+Don't run a Python program for this task. Please rewrite the following posting information into **posting address** and **official titles**. The output table should contain three columns:
+
+1. **original_text**: The original posting information
+2. **posting_address_name**: The geographical or administrative location mentioned in the posting information
+3. **posting_office_name**: The formal official title related to the post.
+
+If the **posting_office_name** contains abbreviations or informal names, rewrite them into the formal official title. Ensure accurate extraction of both the **posting_address_name** and the **official title**.
+
+### List of Posting Information:
+
+江西承宣布政使司僉事
+雲南承宣布政使司副使
+湖廣承宣布政使司兵備
+雲南承宣布政使司參知政事
+杭州府儒學訓導
+廣東都指揮使司布政使司參議
+武邑知縣
+臨清兵備道兵備副使
+湖廣承宣布政使司按察使司副使
+參議
+河行人
+御史
+河南都指揮使司副使
+臨江府臨江侯
+陝西承宣布政使司行太僕寺卿
+山西監察道監察御史
+按山東
+溫州府司獄
+大使
+遂安遂安伯
+南京翰林院侍講學士
+山東承宣布政使司布政使
+紹興府推官
+寶坻縣令
+濟南市歷城守
+濟南市歷城縣縣尉
+濟南市歷城縣尉
+濟南
+知吉州府
+測試市測試縣尉
