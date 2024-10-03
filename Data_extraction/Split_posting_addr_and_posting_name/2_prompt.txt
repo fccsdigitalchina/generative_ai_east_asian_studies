@@ -1,19 +1,17 @@
-Rewrite the following posting information into **posting address** and **official titles**, with the following output columns:
+Don't run a python program for this task. Please rewrite the following posting information into **posting address** and **official titles**. The output table should contain three columns:
 
-1. **original_text**: The original posting information.
-2. **posting_address_name_lower**: The first (or lower) geographical or administrative location in the address.
-3. **posting_address_name_upper**: The second (or upper) geographical or administrative location in the address, if it exists.
-4. **posting_office_name**: The formal official title related to the post. If abbreviations or informal names are used, convert them to formal titles. Don't put any address information here. Move any address information to posting_address_name_lower or posting_address_name_upper, and rewrite the rest of it to a formal official name.
+1. **original_text** The original posting information
+2. **posting_address_name** The geographical or administrative location mentioned in the posting information. ***Separate multiple address names by asemi-colon***(e.g., 北京;丰台). 
+3. **posting_office_name** The formal official title related to the post. Don't put any address information here.
 
-### Split Rule:
-- If the address contains multiple locations, split the first location into **posting_address_name_low** and the second location into **posting_address_name_upper**.
-- If there is only one location, place it in **posting_address_name_low** and leave **posting_address_name_upper** blank.
-- Do not run any program to extract the information. Only output the table in the final result
-  
-#### Reason for the Split:
-- **Lower** refers to the first mentioned address, and **upper** refers to any second or subsequent address mentioned in the original text. This ensures clear differentiation when multiple addresses are provided, without implying any specific administrative hierarchy.
+If the **posting_office_name** contains abbreviations or informal names, rewrite them to the formal official title.
 
-Use this rule to split the addresses and extract the **official title** accurately. 
+Don’t delete the administrative unit name. Ensure that 府, 州, 縣, 軍, 監 衛, and similar terms are kept with the address.
+Ensure accurate extraction of both the **posting_address_name** and the **official title**.
+
+Do not run any program to extract the information. Only output the table in the final result
+
+Ensure that only the table is generated as output.
 
 ### List of Posting Information:
 
@@ -46,4 +44,4 @@ Use this rule to split the addresses and extract the **official title** accurate
 濟南市歷城縣尉
 濟南
 知吉州府
-測試市測試縣尉
+測試省測試市測試區測試縣尉
