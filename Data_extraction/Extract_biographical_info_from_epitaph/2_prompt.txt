@@ -1,0 +1,51 @@
+**Task**: Extract detailed information from Chinese historical epitaphs (14th to 17th centuries) and provide all results in **traditional Chinese**.
+
+**Fields to Extract**:
+
+1. **Surname**
+    - The family name of the biographical subject.
+2. **First Name**
+    - The given name of the biographical subject.
+3. **Gender**
+4. **Entry**
+    - Include titles such as 進士, 舉人, 生員, 貢生, etc.
+    - If multiple entries exist, separate them with a semicolon.
+5. **Zi (Courtesy Name)**
+6. **Hao (Studio/Style Name)**
+7. **Other Alternative Names**
+    - Includes 諡號, 小名, 小字, 俗名, 法號, 道號, 廟號, etc.
+    - Indicate the type of name in parentheses and separate multiple names with a semicolon.
+8. **Official Title**
+    - Retain the original order of titles.
+    - Include associated time or location details.
+    - Expand abbreviations into full standard official titles.
+    - Separate multiple titles with a semicolon.
+9. **Kinship Relationship**
+    - Include all kinship details.
+    - Use the format: {biographical subject}’s {relationship} was {kinship name}({additional information});
+    - Separate multiple relationships with a semicolon.
+10. **Social Association**
+    - Extract relationships such as friends, teachers, or individuals connected to the epitaph.
+    - Use the format: {biographical subject}’s {relationship} was {associated person name}({additional information});
+    - Separate multiple associations with a semicolon.
+11. **Birth Time**
+    - Retain the original text and provide a conversion to Western years in parentheses.
+12. **Death Time**
+    - Retain the original text and provide a conversion to Western years in parentheses.
+13. **Place of Origin**
+    - If it is XX人, the type is 籍貫.
+    - Include ancestral 祖籍 or household addresses 戶籍 and specify the type of address in parentheses.
+    - Separate multiple locations with a semicolon.
+14. **Death Place**
+15. **The Author of the Epitaph**
+
+**Output Requirements**:
+
+- Present the extracted data in a clear, structured sheet format.
+- Use the provided field names as column headers.
+- All extracted information must be in **traditional Chinese**.
+- If specific information is not available, leave the field blank.
+- Don’t output notes or analysis.
+- Don’t write python codes.
+
+Here is the text:
