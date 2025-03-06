@@ -1,0 +1,85 @@
+# Task: Find detailed information from Chinese historical epitaphs (14th to 17th centuries) and provide all results in `traditional Chinese`
+
+## Fields to Extract (Ensure that the extracted fields are arranged vertically by two columns. The following Surname, First Name… are all attribute names. Output format is tab separated sheet):
+
+`Surname(姓氏)`
+- The family name of the biographical subject.
+`First Name(名，不含姓)`
+- The given name of the biographical subject. Often introduced by 諱.
+`Gender`
+- The gender of the biographical subject. 男 or 女.
+`Zi `(Courtesy Name)
+- Biographical subject’s zi. Often introduced by 字.
+`Hao` (Studio/Style Name)
+- Biographical subject’s hao
+`Other Alternative Names`
+- Biographical subject’s other alternative names
+- Includes 諡號, 小名, 小字, 俗名, 法號, 道號, 廟號, 稱...，呼..., etc.
+- Indicate the type of name in parentheses and separate multiple names with a semicolon.
+`Official Titles`
+- Official Titles of the **biographical subject** rather than the official titles of kinship or other associations.
+- Retain the original order of titles.
+- Include associated time or location details.
+- Expand abbreviations into full standard official titles.
+- Separate multiple titles with a semicolon.
+`Entry into government service`
+- Entry into government service of the biographical subject
+- Include titles such as 進士, 舉人, 生員, 貢生, 童子科 etc.
+- Exclude all titles listed under Official Titles, as entry into government service refers to the process or qualification that leads to official titles, not the titles themselves.
+- If multiple entries exist, separate them with a semicolon.
+`Kinship Relationship`
+- Include all kinship details, including ancestors. (e.g., earliest ancestors, great-grandfather, great-great-grandfather, grandfather, father, parents. If it is xxx之後, xxx is the ancestor.), descendants (e.g., sons, grandsons, great-grandsons), spouses(The keywords could be 娶, 嫁, 適, 配...), spouse's kin, uncles, aunts, siblings, in-laws, and all the extended kinship relationships.
+- Both the 生父 and the 嗣父 should be identified
+- Both the first wife and the second wife should be pointed out
+- Kinship should include 姻親
+- Identify **specific real individuals** and their relationship to the biographical subject.
+- If the kin had honorific titles, official titles(e.g., "官衔", "爵位",...) or other information, include the type of title in parentheses for each individuals. Multiple information should be separated by |.
+- If the record of the deceased's wife or concubine only includes their surname, use the format: {surname}氏. Do not mistake their honorific titles as their first names.
+- Use the format: {name of biographical subject}’s {relationship} was {kinship name}({additional information});
+- When subject does not have direct descendants, they will adopt sons from relatives. This is denoted by 繼 and 以 (subject) 為後. Accounts of adoption will often be followed by accounts of biological relationships. List adoptive relationships after biological relationships.
+- Note that 叔子 means third son, not brother in law.
+- Separate multiple relationships with a semicolon.
+`Social Association`
+- Extract relationships such as friends, teachers, colleagues, any connected to the biographical subject. Extract both positive and negative social relationships.
+- Exclude mythological figures, deities, or spirits (e.g., gods, ghosts, or religious entities).
+- Exclude kinship relationships (e.g., parents, children, siblings, spouse, spouse's kinships), which should be categorized under "Kinship Relationship".
+- Use the format: {biographical subject}’s {relationship} was {associated person name}({additional information});
+- Separate multiple associations with a semicolon.
+- Check context to determine whether relationships are with the subject or with another person mentioned in the text, and only include associations with the subject.
+- Only list social associations that are individuals who are specifically named. Do not include associations with general groups of people.
+`Date of Birth`
+- Biographical subject’s date of birth
+- Retain the original text and provide a conversion to Western years in parentheses.
+- If the era name of the year can be inferred from the text (e.g., through contextual clues).
+`Date of Death`
+- Biographical subject’s date of death
+- Retain the original text and provide a conversion to Western years 
+in parentheses.
+- If the era name of the year can be inferred from the text (e.g., through contextual clues).
+`Age at Death`
+- Biographical subject’s age at death
+Note that in premodern China, age was counted as one at birth.
+`Place of Origin`
+- Biographical subject’s place of origin
+- If it is XX人, the type is 籍貫.
+- Include ancestral 祖籍, household addresses 戶籍… and specify the type of address in parentheses.
+- Separate multiple locations with a semicolon.
+`Death Place`
+- Biographical subject’s death place
+- The geographical location of the biographical subject’s death (e.g., a county, province, or town)
+`Burial place 葬地`
+- Biographical subject’s burial place
+`Writings 著作`
+- Generate the titles of a biographical subject’s writings. If a smaller piece, such as a preface, is included, indicate its role in parentheses.
+`The author name of the Epitaph`
+- The author's name
+
+## Output Requirements:
+- Present the extracted data in a clear, vertically tab separated two columns sheet format.
+- Use the provided field names as column headers.
+- All extracted information must be in traditional Chinese, but the presentation of the information must be in English. For example, 張三 is the father of 張四.
+- If specific information is unavailable, leave the field empty. DO NOT populate blank cells with terms like "blank," "空白", "未詳", “unknown”, “無”...
+- Don’t output notes or analysis.
+- Generate only a structured data sheet without any additional text or explanations.
+
+## Here is the text:
