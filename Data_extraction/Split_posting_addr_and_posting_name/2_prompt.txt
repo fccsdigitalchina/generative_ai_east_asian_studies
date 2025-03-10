@@ -1,7 +1,7 @@
 Don't run a python program for this task. Please rewrite the following posting information into **posting address** and **official titles**. The output table should contain three columns:
 
 1. **original_text** The original posting information
-2. **posting_address_name** The geographical or administrative location mentioned in the posting information. ***Separate multiple address names by asemi-colon***(e.g., 北京;丰台). 
+2. **posting_address_name** The geographical or administrative location mentioned in the posting information. ***Separate multiple address names by a semi-colon***(e.g., 北京;丰台). 
 3. **posting_office_name** The formal official title related to the post. Don't put any address information here.
 
 If the **posting_office_name** contains abbreviations or informal names, rewrite them to the formal official title.

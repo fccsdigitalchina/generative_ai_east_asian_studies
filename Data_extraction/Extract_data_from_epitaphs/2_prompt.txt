@@ -1,4 +1,4 @@
-﻿# Task: Find detailed information from Chinese historical epitaphs (14th to 17th centuries) and provide all results in `traditional Chinese`
+# Task: Find detailed information from Chinese historical epitaphs (14th to 17th centuries) and provide all results in `traditional Chinese`
 
 ## Fields to Extract (Ensure that the extracted fields are arranged vertically by two columns. The following Surname, First Name… are all attribute names. Output format is tab separated sheet):
 
