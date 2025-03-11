@@ -10,6 +10,7 @@
 3. Output a table with two columns:
    - **Column 1:** Kinship relationship from the input file.
    - **Column 2:** Assigned `c_kinrel`.
+4. Generate only the table, without any additional content.
 
 **KINSHIP CODE RULES:**
 
